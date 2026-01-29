@@ -199,7 +199,7 @@ const VirtualTryOn: React.FC = () => {
             return;
         }
 
-        const apiKey = import.meta.env.VITE_GEMINI_VTON_API_KEY;
+        const apiKey = import.meta.env.API_KEY;
         if (!apiKey) {
             alert("API Key not found. Please ensure VITE_AI_VTON_API_KEY is set in your .env file.");
             return;
